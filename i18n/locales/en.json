@@ -1,0 +1,430 @@
+{
+  "lang": "ltr",
+  "locale": {
+    "en": "ع",
+    "ar": "EN"
+  },
+  "ABOUT": {
+    "title": "What Distinguishes the Company from Competitors",
+    "content": "Eva World is the leading classified advertising platform for real estate in Egypt. Its primary goal is to connect buyers, investors, contractors, sellers, renters, and brokers to facilitate the search for contracting services.",
+    "features1": [
+      {
+        "title": "High Quality",
+        "description": "The company's commitment to providing high-quality work and reliable building materials enhances its reputation and preference among clients."
+      },
+      {
+        "title": "Experience and Expertise",
+        "description": "Having a long-experienced team in contracting and sufficient technical knowledge can distinguish the company from its competitors."
+      },
+      {
+        "title": "Innovation and Technology",
+        "description": "Using the latest technologies and innovations in project management and construction can increase work efficiency and reduce costs."
+      },
+      {
+        "title": "Sustainability",
+        "description": "Adopting sustainable and environmentally friendly building practices demonstrates the company's commitment to social responsibility and attracts customers who prefer green options."
+      },
+      {
+        "title": "Excellent Service",
+        "description": "Providing outstanding customer service, including quick responsiveness and flexibility in dealings, can enhance customer loyalty and make the company the preferred choice."
+      },
+      {
+        "title": "Commitment to Deadlines",
+        "description": "The ability to deliver projects on time and within the set budget reflects the company's professionalism and positively impacts its reputation."
+      }
+    ],
+    "who_we_are": "Who We Are",
+    "paragraph1": "At Skyscrapers Real Estate, we focus on providing exceptional services in real estate development and investment. We turn ideas into tangible realities and provide our clients with investment solutions that contribute to building a promising future.",
+    "paragraph2": "We specialize in planning and executing residential and commercial real estate projects according to the highest global standards. We offer innovative designs that combine functionality and beauty while committing to environmental and economic sustainability.",
+    "paragraph3": "Our team is dedicated to monitoring every phase of development, from feasibility studies to project handover.",
+    "infoText": "We Are Hiring!",
+    "description": "Our team is rapidly growing, and we are always looking for skilled and professional individuals.",
+    "buttonText": "View Available Jobs"
+  },
+  "COUNTRIES": {
+    "sa": "Saudi Arabia",
+    "eg": "Egypt",
+    "ae": "United Arab Emirates"
+  },
+  "GOALS": {
+    "transparency": "Transparency and Trust:",
+    "transparencyDescription": "We put our clients at the heart of every decision we make and work transparently to ensure their trust in our services.",
+    "innovation": "Innovation and Sustainability:",
+    "innovationDescription": "We are committed to developing real estate projects characterized by innovation and high quality while focusing on environmental and social sustainability.",
+    "excellence": "Excellence in Service:",
+    "excellenceDescription": "We aim to provide a unique experience for each client, based on professionalism, precision, and attention to detail.",
+    "partnership": "Partnership and Shared Success:",
+    "partnershipDescription": "We consider every client a partner in success, and we strive to achieve their long-term investment goals."
+  },
+  "SERVICES": {
+    "propertyDevelopment": "1. Property Development",
+    "propertyDevelopmentDescription": "Property development has many advantages that make it one of the most attractive investment sectors. Some of these advantages include:",
+    "flexibility": "Flexibility in Design and Innovation:",
+    "flexibilityDescription": "Allows developers to create innovative projects that meet changing market needs, such as smart and sustainable buildings.",
+    "financialStability": "Achieving Financial and Social Stability:",
+    "financialStabilityDescription": [
+      "Owning Fixed Assets: Owning property is a long-term investment that provides financial security.",
+      "Residential Stability: For individuals buying for residence, property development gives them the opportunity to live in a comfortable and stable environment."
+    ]
+  },
+  "SERVICES1": {
+    "propertyDevelopment": "Property Development",
+    "propertyDevelopmentDescription": "We assist investors in selecting ideal locations for real estate projects based on comprehensive market studies. We efficiently manage investment operations with a focus on delivering added value to clients.",
+    "flexibility": "Investment Opportunities:",
+    "flexibilityDescription": [
+      "Real estate development can generate high returns through rental or resale. ",
+      "Real estate is often a safe investment due to its increasing value over time."
+    ],
+    "financialStability": "Investment Flexibility:",
+    "financialStabilityDescription": [
+      "You can invest in several types of real estate:",
+      "Residential",
+      "Commercial",
+      "Lands",
+      "Touristic Properties"
+    ]
+  },
+  "NAV": {
+    "company_name": "Nat7at Sa7ab",
+    "contactUs": "Contact Us",
+    "viewAll": "View All",
+    "branches": "Branches",
+    "clients": "Clients",
+    "help": "Help",
+    "gallery": "Gallery",
+    "GALLERY": "Photo Gallery",
+    "projects": "Projects",
+    "main_address": "Main Address",
+    "sa_address": "Saudi Arabia, Jeddah, Al Rehab District",
+    "first_number": "First Number",
+    "second_number": "Second Number",
+    "third_number": "Third Number",
+    "whatsapp": "WhatsApp Number",
+    "whatsapp_number": "+966549695528",
+    "all_rights_reserved": "All Rights Reserved",
+    "about_us": "About",
+    "values": "Values",
+    "goals": "Goals",
+    "ERROR": "ERROR",
+    "call_us": "Call Us",
+    "phone_number": "Phone Number",
+    "portfolio": "Portfolio",
+    "team": "Team",
+    "faq": "FAQ",
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "privacy policy": "Privacy Policy",
+    "Terms and Conditions": "Terms and Conditions",
+    "contact": "Contact Us",
+    "TermsOfUse": "Terms Of Use",
+    "RefundPolicy": "Refund Policy",
+    "blogs": "Blogs",
+    "getQuote": "Get A Quote",
+    "contact_us": "Contact Us",
+    "services": "Services",
+    "comprehensive_medical_services": "Comprehensive Medical Services",
+    "company": "Company",
+    "careers": "Careers",
+    "privacy_policy": "Privacy Policy",
+    "web_development": "Web Development",
+    "app_development": "App Development",
+    "seo": "SEO",
+    "consulting": "Consulting",
+    "support": "Support",
+    "faqs": "FAQs",
+    "help_center": "Help Center",
+    "live_chat": "Live Chat",
+    "email_us": "Email Us",
+    "resources": "Resources",
+    "blog": "Blog",
+    "documentation": "Documentation",
+    "api": "API",
+    "community": "Community",
+    "quick_links": "Quick Links",
+    "home_care": "Home Care Visits",
+    "human_services": "Human Services",
+    "lab_tests": "Lab Tests",
+    "store": "Store",
+    "pharmacies": "Pharmacies",
+    "terms_conditions": "Terms & Conditions"
+  },
+  "help": {
+    "title": "Help Center",
+    "topics": {
+      "gettingStarted": {
+        "title": "Getting Started",
+        "description": "Learn how to get started with our platform."
+      },
+      "accountManagement": {
+        "title": "Account Management",
+        "description": "Manage your account settings and preferences."
+      },
+      "billingAndPayments": {
+        "title": "Billing and Payments",
+        "description": "Understand billing, payments, and refunds."
+      },
+      "privacyAndSecurity": {
+        "title": "Privacy and Security",
+        "description": "Learn how we protect your privacy and data."
+      },
+      "technicalSupport": {
+        "title": "Technical Support",
+        "description": "Get help with technical issues or bugs."
+      }
+    },
+    "backToHelp": "← Back to Help",
+    "learnMore": "Learn More"
+  },
+  "terms": {
+    "title": "Terms and Conditions",
+    "section1": {
+      "title": "Acceptance of Terms",
+      "content": "By using this site, you agree to these terms and conditions."
+    },
+    "section2": {
+      "title": "Privacy Policy",
+      "content": "Your privacy is important to us. Read our privacy policy for more details."
+    },
+    "section3": {
+      "title": "Limitation of Liability",
+      "content": "We are not liable for any damages arising from the use of this site."
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "section1": {
+      "title": "Information We Collect",
+      "content": "We collect personal information to provide better services."
+    },
+    "section2": {
+      "title": "How We Use Your Information",
+      "content": "Your information is used to personalize your experience and improve our services."
+    },
+    "section3": {
+      "title": "Your Privacy Rights",
+      "content": "You have the right to access, update, or delete your personal information."
+    }
+  },
+  "PROJECT": {
+    "TITLE": "Emerald Valley",
+    "TITLE1": "Emerald Valley Project",
+    "DESCRIPTION": "It is a residential complex located in the northeast of Riyadh City, Al-Rimal neighborhood, with 6 residential units designed in an ideal and high-quality manner, featuring modern details that meet your aspirations and align with your needs.",
+    "title": "Project Features"
+  },
+  "TITLES": {
+    "all": "All {name}",
+    "every": "All {name}",
+    "Brands": "Brands",
+    "Products": "Products",
+    "whyChooseUs": "Why Choose Us",
+    "featuredPosts": "Featured Posts",
+    "Con-grates": "Thank you, Your request sent successfully!",
+    "aboutUs": "About Us",
+    "pleaseEnterYourInformation": "Please enter your information",
+    "relatedProducts": "Related Products",
+    "productDetails": "Product Details",
+    "Partners": "Partners",
+    "Services": "Services",
+    "premiumProductsCraftedToElevateYourExperience": "Premium Products Crafted To Elevate Your Experience",
+    "relatedBlogs": "Related Blogs",
+    "categories": "Categories",
+    "Internal server error": "Internal server error",
+    "willSendYouWeeklyUpdatesForYourBetter": "Will send you weekly updates for your better tool management.",
+    "JoinOurNewsletter": "Join Our Newsletter",
+    "Legal": "Legal",
+    "Company": "Company",
+    "reachUs": "Reach Us",
+    "contactInformation": "Contact Information",
+    "weAreHereToServe": "We are here to serve you and facilitate all your steps."
+  },
+  "branches": {
+    "jeddah": "Jeddah Branch",
+    "jeddah_address": "Briman Briman, Saudi Arabia",
+    "riyadh": "Riyadh Branch",
+    "riyadh_address": "3379 Secod, Industrial Area, Riyadh 14333, Saudi Arabia",
+    "dammam": "Dammam Branch",
+    "dammam_address": "Briman Briman, Saudi Arabia",
+    "makkah": "Makkah Branch",
+    "makkah_address": "3379 Secod, Industrial Area, Riyadh 14333, Saudi Arabia",
+    "madinah": "Madinah Branch",
+    "madinah_address": "HHRQ+7H5 Madinah, Saudi Arabia",
+    "al_ahsa": "Al Ahsa Branch",
+    "al_ahsa_address": "CF2J+M9V, Industrial Area, Al Ahsa 36453, Saudi Arabia",
+    "taif": "Taif Branch",
+    "taif_address": "CFRX+85Q, Al Hawiyah, Taif 26576, Saudi Arabia",
+    "arar": "Arar Branch",
+    "arar_address": "XWRV+6PC, Industrial Road, Arar, Saudi Arabia",
+    "open_on_map": "Open on Map"
+  },
+  "TEAM": {
+    "name": "Shadi Alharbi",
+    "title": "Chairman"
+  },
+  "OUR_GOALS": {
+    "TITLE": "Our Goals",
+    "DESCRIPTION1": "We strive for excellence and sustainable success",
+    "DESCRIPTION2": "At Natahat Al-Sahab Real Estate Company, we strive for excellence and sustainable success. Our vision and ambitious goals are designed to create real value for our clients and partners, driving progress in the real estate market, achieving sustainability, and offering exceptional investment opportunities."
+  },
+  "OUR_VISION": {
+    "TITLE": "Our Vision and Mission",
+    "DESCRIPTION": "The industry is the present and future of architectural renaissance in the Arab world and globally. Our vision is to reach our clients in a competitive environment, offering high-quality products and services more economically and efficiently, meeting their needs, and keeping up with the industrial renaissance."
+  },
+  "OUR_VALUES": {
+    "TITLE": "Our Values",
+    "commitment": "Commitment",
+    "safety": "Safety",
+    "excellence": "Excellence",
+    "creativity": "Creativity"
+  },
+  "LABELS": {
+    "all": " all {name}",
+    "COUNTRY": "Country",
+    "branch": "Branch",
+    "branches": "branches",
+    "contactUs": "Contact Us",
+    "phoneNumber": "Phone Number",
+    "select_country": "Select your country",
+    "email": "Enter your email",
+    "client": "Clients",
+    "CREATED_AT": "Created At:",
+    "DOWNLOAD": "Download",
+    "Views": "Views",
+    "image": "Images",
+    "mobile": "Enter your mobile number",
+    "message": "Write your message",
+    "mainAddress": "Main Address",
+    "phoneNumber1": "First Number: (966) 569408703",
+    "address1": "New Industrial Area, Riyadh 14333, Saudi Arabia",
+    "phoneNumber2": "Second Number: (966) 553568831",
+    "phoneNumberValue1": "(966) 569408703",
+    "phoneNumberValue2": "(966) 553568831",
+    "or": "Or",
+    "selectImage": "Select Image",
+    "projects": "Projects",
+    "success": "We strive for excellence and success",
+    "value_proposition": "At Sky Scrapers Real Estate, we work with a clear vision and ambitious goals to provide real value to all our clients and partners.",
+    "goals_intro": "Our goals: \"Designed to drive progress in the real estate market, achieve sustainability, and provide exceptional investment opportunities.\"",
+    "investment_returns": "Achieving the highest investment returns for clients",
+    "investment_support": "Supporting our clients in making successful investment decisions by offering unique and guaranteed real estate opportunities.",
+    "uploading": "Uploading",
+    "DropImageAnywhereToUpload": "Drop image anywhere to upload",
+    "productImage": "Product Image",
+    "productName": "Product Name",
+    "productDesc": "Product Description",
+    "sale_percentage": "Sale Percentage",
+    "remaining_units": "Remaining Units",
+    "unsold_units": "Unsold Units",
+    "residential_units": "Residential Units",
+    "enterYour": "Enter your {name}",
+    "enter": "Enter {name}",
+    "project_title": "Project Title",
+    "file_title": "File about the project",
+    "open_on_map": "Open on Map",
+    "video_project": "Video about the project ",
+    "open_video": "Open Video",
+    "open_file": "Open File",
+    "download_file": "Download File",
+    "porcelain_ceramic_floors": "Porcelain and Ceramic Floors",
+    "independent_entrance": "Independent Entrance",
+    "high_quality_wooden_doors": "High-Quality Wooden Doors",
+    "independent_water_electricity_meters": "Independent Water and Electricity Meters",
+    "prime_location": "Prime Location",
+    "aluminum_windows_with_glass": "Aluminum Windows with Glass",
+    "whatsapp": "Whatsapp",
+    "Total": "Total (Inc Vat) :",
+    "subTotal": "Sub Total ({count} items) :",
+    "name": "Name",
+    "errorDesc": "The server encountered an internal error or misconfiguration and was unable to complete your request",
+    "yourEmailAddress": "Your email address",
+    "full_name": "Full Name",
+    "Email": "Email",
+    "Phone": "Phone Number",
+    "Subject": "Subject",
+    "Message": "Message",
+    "write_your_message": "Write your message.."
+  },
+  "NEWSLETTER": {
+    "title": "Newsletter",
+    "description": "Subscribe now to get alerts and enjoy our latest blogs, ideas, and insights.",
+    "placeholder": "Email Address",
+    "button": "Submit"
+  },
+  "SLIDES": {
+    "title1": "We Build Your Dreams on Solid Foundations for Real Estate Success",
+    "description1": "At Skyscrapers Real Estate, we work with a clear vision and ambitious goals aimed at providing true value to all our clients and partners. Our objectives are designed to advance the real estate market, achieve sustainability, and offer exceptional investment opportunities",
+    "title2": "A Distinctive and Highly Competent Team",
+    "description2": "We are proud to have a distinctive and highly competent team, enabling us to achieve our goals quickly and with precision",
+    "title3": "Real Estate Development and Investment Services with the Highest Standards of Quality",
+    "description3": "In the world of construction and development, every project begins as a dream, a vision waiting to be realized. At Fazah Group, we understand the importance of these dreams, and we are committed to bringing them to reality"
+  },
+  "BUTTONS": {
+    "requestNow": "Request Now",
+    "subscribe": "Subscribe",
+    "sendRequest": "Send Request",
+    "ReadMore": "Read More",
+    "cancel": "Cancel",
+    "submit": "Submit Your Request",
+    "sendMessage": "Send Message",
+    "SHOW_IMAGE": "Show Image"
+  },
+  "features": [
+    "Porcelain and Ceramic Floors",
+    "Independent Entrance",
+    "High-Quality Wooden Doors",
+    "Independent Water and Electricity Meters",
+    "Prime Location",
+    "Aluminum Windows with Glass"
+  ],
+  "ERRORS": {
+    "isRequired": "{name} is required",
+    "invalidPhone": "The phone number is invalid.",
+    "validEmail": "Email must be a valid email"
+  },
+  "items": {
+    "under_construction": "Under Construction",
+    "completed": "Completed",
+    "emerald_valley": "Emerald Valley",
+    "emerald_valley1": "Emerald Valley",
+    "maroog_lake": "Maroog Lake",
+    "maroog_lake1": "Maroog Lake",
+    "elite_palace": "Elite Palace",
+    "elite_palace1": "Elite Palace",
+    "royal_heights": "Royal Heights",
+    "royal_heights1": "Royal Heights",
+    "real_estate_development": "Real Estate Development",
+    "real_estate_investment": "Real Estate Investment",
+    "project_details": "Project Details"
+  },
+  "projects": "Our Projects",
+  "yearEstablished": "Year established",
+  "productsAvailable": "Products available",
+  "satisfiedCustomers": "Satisfied Customers",
+  "vendors": "Vendors",
+  "Sorry": "Sorry",
+  "SAR": "SAR",
+  "NajdGlobalTrading": "Najd \n Global \n Trading",
+  "Back to home": "Back to home",
+  "pleaseKindlyTryAgain": "Please Kindly Try Again",
+  "something went wrong": "something went wrong",
+  "real_estate_investment": "Real Estate Investment",
+  "project_development": "Project Development",
+  "project_development1": "Project Development",
+  "view_more": "View More",
+  "real_estate_description": "We specialize in planning and executing residential and commercial real estate projects to the highest global standards. We offer innovative designs that combine functionality and aesthetics, with a commitment to environmental and economic sustainability.",
+  "alternate_real_estate_description": "At Skyscrapers Real Estate Company, we focus on providing exceptional services in real estate project development and investment. We work to turn ideas into tangible reality, offering our clients investment solutions that contribute to building a promising future.",
+  "alt_text_right": "Real Estate Investment",
+  "alt_text_left": "Project Development",
+  "services": "Our Services",
+  "innovation_in_design": "Innovation in Design",
+  "quality_and_durability": "Quality and Durability",
+  "easy_installation_and_maintenance": "Easy Installation and Maintenance",
+  "work_experience": "Work Experience",
+  "branches_in_kingdom": "Branches in the Kingdom",
+  "years_of_experience": "Years of Experience",
+  "employees_and_workers": "Employees and Workers",
+  "projects_completed": "Projects Completed",
+  "projects_in_progress": "Projects In Progress",
+  "GLOBAL_TITLE.team": "Our Team",
+  "GLOBAL_TITLE.subtitle": "We have a team of skilled and experienced professionals in their fields, capable of executing your project efficiently and professionally."
+}

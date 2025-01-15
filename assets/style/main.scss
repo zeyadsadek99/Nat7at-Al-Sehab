@@ -1,0 +1,66 @@
+::-webkit-scrollbar {
+  @apply w-3.5;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-[#f6f6fd];
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply rounded-lg bg-primary;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primaryOpacity30;
+}
+html, body {
+  overflow-x: hidden;
+}
+body {
+  -webkit-scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+  overflow-x: hidden;
+  &:has(.isScrolled) {
+    @apply pt-[270px];
+  }
+}
+
+.base-btn {
+  @apply bg-primary border-primary hover:bg-white flex items-center justify-center gap-3 text-white hover:text-primary hover:border-primary border  rounded-md py-3 px-8 h-14  font-medium duration-300;
+
+  &:disabled {
+    @apply bg-gray-100 text-sub;
+
+    &:hover {
+      &::before,
+      &::after {
+        content: unset;
+      }
+    }
+  }
+}
+
+.fade-in {
+  animation: fade-in 0.8s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    @apply translate-y-0 opacity-0;
+  }
+  100% {
+    @apply translate-y-0 opacity-100;
+  }
+}
+
+// input:-webkit-autofill,
+// input:-webkit-autofill:hover,
+// input:-webkit-autofill:focus,
+// input:-webkit-autofill:active {
+//   -webkit-text-fill-color: #000;
+//   -webkit-background-clip: text !important;
+//   background-color: transparent !important;
+// }
