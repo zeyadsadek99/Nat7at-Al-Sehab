@@ -95,7 +95,7 @@ export default defineNuxtConfig({
   swiper: {},
   plugins: [
     {
-      src: "~/plugins/vue-toastification.client",
+      src: "~/plugins/vue-toastification.client.ts",
       mode: "client",
     },
     "~/plugins/i18n.client.ts",
