@@ -94,9 +94,15 @@ export default defineNuxtConfig({
 
   swiper: {},
   plugins: [
-    "~/plugins/vue-toastification.client",
+    {
+      src: "~/plugins/vue-toastification.client",
+      mode: "client",
+    },
     "~/plugins/i18n.client.ts",
-    "~/plugins/vue-google-maps.ts",
+    {
+      src: "~/plugins/vue-google-maps.client.ts",
+      mode: "client",
+    },
   ],
 
   postcss: {
