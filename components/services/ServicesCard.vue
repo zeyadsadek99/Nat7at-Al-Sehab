@@ -69,7 +69,7 @@
               </span>
               <ul
                 v-if="item.subItems && item.subItems.length"
-                class="list-disc pl-6 mt-1 text-sm space-y-1"
+                class="list-disc list-inside pl-6 mt-1 text-sm space-y-1"
                 data-aos="fade-left"
                 :data-aos-delay="index * 300 + 100"
                 data-aos-duration="700"

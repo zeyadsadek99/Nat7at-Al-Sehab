@@ -6,7 +6,7 @@
       data-aos-duration="1000"
     >
       <div
-        class="grid grid-cols-2 md:grid-cols-5 gap-8 text-center"
+        class="grid grid-cols-2 md:grid-cols-5 text-center"
       >
         <div
           v-for="(item, index) in stats"
@@ -24,7 +24,7 @@
             {{ item.number }}
           </h1>
           <p
-            class="lg:text-xl text-text"
+            class="lg:text-xl text-text whitespace-nowrap"
             data-aos="fade-up"
             :data-aos-delay="index * 200"
           >

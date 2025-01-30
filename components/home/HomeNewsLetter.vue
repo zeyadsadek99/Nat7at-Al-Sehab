@@ -28,18 +28,18 @@
           class="w-full  relative"
         >
           <!-- Email Input -->
-          <div class="relative">
+          <div class="relative mx-auto max-lg:w-[360px]">
             <InputsBase
               id="email"
               name="email"
               :placeholder="t('NEWSLETTER.placeholder')"
-              class="w-full py-5 lg:pe-20 ps-4   font-medium placeholder-primary"
+              class="w-full h-20 lg:pe-20 ps-4   font-medium placeholder-primary"
             />
 
             <InputsButton
               type="submit"
               :name="t('NEWSLETTER.button')"
-              class="absolute end-0 top-[83px] lg:end-4 lg:top-3 mx-auto text-center bg-primary text-white px-4 lg:px-20 py-2 rounded-[8px] shadow-md transition-all duration-300 transform hover:bg-[#14275A] hover:scale-105 hover:shadow-lg"
+              class="absolute end-4 top-3 mx-auto text-center bg-primary text-white px-4 lg:px-20 py-2 rounded-[8px] shadow-md transition-all duration-300 transform hover:bg-[#14275A] hover:scale-105 hover:shadow-lg"
             />
           </div>
 
@@ -59,8 +59,8 @@ const schema = reactive(
   yup.object({
     email: yup
       .string()
-      .email(t("ERRORS.validEmail"))
       .required(t("ERRORS.isRequired", { name: t("LABELS.Email") }))
+      .email(t("ERRORS.validEmail"))
       .test("email", t("ERRORS.validEmail"), (value) => {
         return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+(?:\.[a-z])*$/.test(
           value

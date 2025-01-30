@@ -1,7 +1,9 @@
 <template>
   
   <GlobalBreadCrumbs :items="breadItems" :title="t('NAV.values')" />
-  <section class="mx-auto space-y-16">
+  <GoalsCard :items="goals" />
+
+  <!-- <section class="mx-auto space-y-16">
     <GoalsCard
       :imgSrc="image3"
       :title="t('GOALS.transparency')"
@@ -24,7 +26,7 @@
       :paragraph1="t('GOALS.partnershipDescription')"
       :reversed="true"
     />
-  </section>
+  </section> -->
 </template>
 
 <script setup lang="ts">
@@ -46,6 +48,32 @@ const breadItems = [
     name: t("NAV.values"),
     path: "/values",
     imgIcon: "",
+  },
+];
+const goals = [
+  {
+    imgSrc: image3,
+    title: t("GOALS.transparency"),
+    paragraph1: t("GOALS.transparencyDescription"),
+    reversed: false,
+  },
+  {
+    imgSrc: image2,
+    title: t("GOALS.innovation"),
+    paragraph1: t("GOALS.innovationDescription"),
+    reversed: true,
+  },
+  {
+    imgSrc: image1,
+    title: t("GOALS.excellence"),
+    paragraph1: t("GOALS.excellenceDescription"),
+    reversed: false,
+  },
+  {
+    imgSrc: image2,
+    title: t("GOALS.partnership"),
+    paragraph1: t("GOALS.partnershipDescription"),
+    reversed: true,
   },
 ];
 </script>

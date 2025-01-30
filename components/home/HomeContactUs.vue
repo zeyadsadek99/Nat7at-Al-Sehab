@@ -11,7 +11,10 @@
         data-aos="zoom-in"
         data-aos-duration="800"
       >
-        <component :is="contactItems.topIcon" />
+        <NuxtLink :to="localePath('/contact')">
+          <component :is="contactItems.topIcon" />
+
+        </NuxtLink>
       </div>
       <h1
         class="text-2xl font-bold"
@@ -63,6 +66,11 @@
 </template>
 
 <script setup lang="ts">
+import { ref, computed } from "vue";
+import { useI18n } from "vue-i18n";
+
+const { locale, t } = useI18n();
+const localePath = useLocalePath();
 defineProps({
   contactItems: {
     type: Object,

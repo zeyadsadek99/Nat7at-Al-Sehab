@@ -119,42 +119,42 @@ const profiles = [
   {
     image: image1,
     name: t("TEAM.name"),
-    title: t("ABOUT.title"),
+    title: t("TEAM.title"),
   },
   {
     image: image1,
     name: t("TEAM.name"),
-    title: t("ABOUT.title"),
+    title: t("TEAM.title"),
   },
   {
     image: image1,
     name: t("TEAM.name"),
-    title: t("ABOUT.title"),
+    title: t("TEAM.title"),
   },
   {
     image: image1,
     name: t("TEAM.name"),
-    title: t("ABOUT.title"),
+    title: t("TEAM.title"),
   },
   {
     image: image1,
     name: t("TEAM.name"),
-    title: t("ABOUT.title"),
+    title: t("TEAM.title"),
   },
   {
     image: image1,
     name: t("TEAM.name"),
-    title: t("ABOUT.title"),
+    title: t("TEAM.title"),
   },
   {
     image: image1,
     name: t("TEAM.name"),
-    title: t("ABOUT.title"),
+    title: t("TEAM.title"),
   },
   {
     image: image1,
     name: t("TEAM.name"),
-    title: t("ABOUT.title"),
+    title: t("TEAM.title"),
   },
 ];
 const clientSlides = [

@@ -82,7 +82,7 @@
           >
             {{ item.number }}
           </h3>
-          <p class="lg:text-xl text-text">{{ item.label }}</p>
+          <p class="lg:text-xl text-text whitespace-nowrap">{{ item.label }}</p>
         </div>
       </div>
     </div>

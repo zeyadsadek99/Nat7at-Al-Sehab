@@ -101,7 +101,7 @@ const socialIcons = [
             <nuxt-link
               v-for="localeItem in locales"
               :key="localeItem.code"
-              :to="switchLocalePath(localeItem.code)"
+              :to="switchLocalePath(localeItem.code as 'en' | 'ar')"
               class="items-center gap-2 px-4 py-2 flex hover:bg-primary hover:text-white"
               :class="{
                 'bg-primary text-white font-bold': localeItem.code === locale, // Highlight active locale

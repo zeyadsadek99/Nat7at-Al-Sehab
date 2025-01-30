@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const axios = useNuxtApp().$axios;
-const { locale,t } = useI18n();
+const { locale, t } = useI18n();
 const i18n: any = useI18n();
 async function getHomeData() {
   return await axios.get("settings").then((res) => res.data.data);
@@ -55,7 +55,7 @@ const {
 
 <template>
   <Html :lang="locale">
-      <!-- <Head>
+    <Head>
       <Title>{{ t("NAV.company_name") }}</Title>
       <Meta name="description" content="Home page" />
       <Meta name="og:description" content="Home page" />
@@ -64,7 +64,7 @@ const {
       <Meta name="image" content="~/assets/icons/logo.svg" />
       <Meta name="og:image" content="~/assets/icons/logo.svg" />
       <Link rel="icon" type="image/x-icon" href="~/assets/icons/logo.svg" />
-    </Head> -->
+    </Head>
 
     <!-- <Head v-if="settings && status === 'success'">
       <Link

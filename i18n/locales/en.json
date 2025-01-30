@@ -379,7 +379,9 @@
   "ERRORS": {
     "isRequired": "{name} is required",
     "invalidPhone": "The phone number is invalid.",
-    "validEmail": "Email must be a valid email"
+    "validEmail": "Email must be a valid email",
+    "invalidCountry": "Invalid country selection"
+
   },
   "items": {
     "under_construction": "Under Construction",

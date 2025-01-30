@@ -1,7 +1,8 @@
 <template>
   <GlobalBreadCrumbs :items="breadItems" :title="t('NAV.goals')" />
+  <GoalsCard :items="goals" />
 
-  <section class=" space-y-16">
+  <!-- <section class=" space-y-16">
     <GoalsCard
       :imgSrc="image1"
       :title="t('LABELS.success')"
@@ -27,7 +28,7 @@
       :paragraph2="t('LABELS.goals_intro')"
       :reversed="true"
     />
-  </section>
+  </section> -->
 </template>
 
 <script setup lang="ts">
@@ -48,6 +49,36 @@ const breadItems = [
     imgIcon: "",
   },
 ];
+const goals = [
+  {
+    imgSrc: image1,
+    title: t("LABELS.success"),
+    paragraph1: t("LABELS.value_proposition"),
+    paragraph2: t("LABELS.goals_intro"),
+    reversed: false,
+  },
+  {
+    imgSrc: image2,
+    title: t("LABELS.success"),
+    paragraph1: t("LABELS.value_proposition"),
+    paragraph2: t("LABELS.goals_intro"),
+    reversed: true,
+  },
+  {
+    imgSrc: image1,
+    title: t("LABELS.investment_returns"),
+    paragraph1: t("LABELS.investment_support"),
+    reversed: false,
+  },
+  {
+    imgSrc: image2,
+    title: t("LABELS.success"),
+    paragraph1: t("LABELS.value_proposition"),
+    paragraph2: t("LABELS.goals_intro"),
+    reversed: true,
+  },
+];
+
 </script>
 
 <style lang="scss" scoped>
