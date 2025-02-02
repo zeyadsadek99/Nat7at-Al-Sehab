@@ -92,6 +92,40 @@ const cardData = [
     ],
   },
 ];
+const projects = {
+  title: t("PROJECT.TITLE"),
+  features: [
+    {
+      text: t("LABELS.porcelain_ceramic_floors"),
+      icon: IconsKey,
+    },
+    {
+      text: t("LABELS.independent_entrance"),
+      icon: IconsLike,
+    },
+    {
+      text: t("LABELS.high_quality_wooden_doors"),
+      icon: IconsCommerical,
+    },
+    {
+      text: t("LABELS.independent_water_electricity_meters"),
+      icon: IconsTreasure,
+    },
+    {
+      text: t("LABELS.prime_location"),
+      icon: IconsDiscount,
+    },
+    {
+      text: t("LABELS.aluminum_windows_with_glass"),
+      icon: IconsVoucher,
+    },
+  ],
+};
+const card = {
+  description: t("PROJECT.DESCRIPTION"),
+  title: t("PROJECT.TITLE1"),
+  image: image1,
+};
 // const {
 //   data,
 //   status,
@@ -118,15 +152,17 @@ const cardData = [
   <GlobalBreadCrumbs :items="breadItems" :title="t('NAV.projects')" />
 
   <div class="flex flex-col gap-14">
-    <ProjectsCard
+    <ProjectsCard :card="card" />
+    <!-- <ProjectsCard
       :description="t('PROJECT.DESCRIPTION')"
       :title="t('PROJECT.TITLE1')"
       :image="image1"
-    />
+    /> -->
     <!-- {{ $route.params.id }} -->
 
-    <ProjectsOptions :cards="cardData"/>
-    <ProjectsProp :title="t('PROJECT.title')" :features="features" />
+    <ProjectsOptions :cards="cardData" />
+    <ProjectsProp :projects="projects" />
+    <!-- <ProjectsProp :title="t('PROJECT.title')" :features="features" /> -->
     <ProjectsCard2 :image="image2" :statistics="statistics" />
   </div>
   <!-- <div v-else class="space-y-20 mb-20" v-if="data">

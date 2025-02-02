@@ -6,7 +6,7 @@
   >
     <!-- Image Section -->
     <img
-      :src="image"
+      :src="card.image"
       alt="Project"
       class="w-full max-w-[598px] rounded-[24px] object-cover h-auto"
       data-aos="zoom-in"
@@ -20,46 +20,52 @@
       data-aos-delay="500"
     >
       <h1 class="text-[36px] font-bold" data-aos="fade-down" data-aos-delay="600">
-        {{ title }}
+        {{ card.title }}
       </h1>
       <p class="text-[17px] mt-4" data-aos="fade-up" data-aos-delay="700">
-        {{ description }}
+        {{ card.description }}
       </p>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const props = defineProps({
-  title: {
+const props =defineProps({
+  card: {
+    type: Object,
     required: true,
   },
-  description: {
-    required: true,
-  },
-  image: {
-    required: true,
-    default: "/assets/icons/logo.svg",
-  },
-  //   label: {
-  //     type: String,
-  //     required: false,
-  //   },
-  //   optionLabel: {
-  //     default: "name",
-  //     required: false,
-  //   },
-  //   id: {
-  //     type: String,
-  //     required: true,
-  //   },
-  //   placeholder: {
-  //     required: true,
-  //   },
-  //   itemValue: {
-  //     requred: true,
-  //   },
 });
+// const props = defineProps({
+//   title: {
+//     required: true,
+//   },
+//   description: {
+//     required: true,
+//   },
+//   image: {
+//     required: true,
+//     default: "/assets/icons/logo.svg",
+//   },
+//   //   label: {
+//   //     type: String,
+//   //     required: false,
+//   //   },
+//   //   optionLabel: {
+//   //     default: "name",
+//   //     required: false,
+//   //   },
+//   //   id: {
+//   //     type: String,
+//   //     required: true,
+//   //   },
+//   //   placeholder: {
+//   //     required: true,
+//   //   },
+//   //   itemValue: {
+//   //     requred: true,
+//   //   },
+// });
 //     type Props = {
 //   blog: Blog;
 // };
