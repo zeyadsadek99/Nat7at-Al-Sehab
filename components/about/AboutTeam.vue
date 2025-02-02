@@ -20,7 +20,7 @@
         data-aos-duration="800"
       >
         <div
-          v-for="(profile, index) in profiles"
+          v-for="(profile, index) in team.profiles"
           :key="index"
           class="space-y-4"
           data-aos="fade-up"
@@ -58,10 +58,10 @@
         data-aos-delay="300"
       >
         <p class="text-[24px] font-bold" data-aos="fade-right">
-          {{ infoText }}
+          {{ team.infoText }}
         </p>
         <p class="text-[15px]" data-aos="fade-left" data-aos-delay="200">
-          {{ description }}
+          {{ team.description }}
         </p>
         <button
           class="group px-10 max-w-[240px] py-2 bg-primary flex gap-2 text-white items-center rounded-md hover:bg-primary-dark"
@@ -72,7 +72,7 @@
             class="size-5 transition-transform duration-300 ease-in-out "
             :class="locale === 'ar' ? 'group-hover:translate-x-1' : 'transform rotate-180 group-hover:-translate-x-1'"
           />
-          <p class="mb-1 whitespace-nowrap">{{ buttonText }}</p>
+          <p class="mb-1 whitespace-nowrap">{{ team.buttonText }}</p>
         </button>
       </div>
     </div>
@@ -83,26 +83,32 @@
 <script setup>
 const { t, locale } = useI18n();
 
-defineProps({
-  profiles: {
-    type: Array,
+const props =defineProps({
+  team: {
+    type: Object,
     required: true,
-    // validator: (arr) => arr.length === 8,
-  },
-  infoText: {
-    type: String,
-    // default: "نحن نبحث عن موظفين!",
-  },
-  description: {
-    type: String,
-    // default:
-    //   "لدينا فريقنا يتطور بسرعة ونحن نبحث دائمًا عن أشخاص مهاريين ومحترفين.",
-  },
-  buttonText: {
-    type: String,
-    // default: "عرض الوظائف المتاحة",
   },
 });
+// defineProps({
+//   profiles: {
+//     type: Array,
+//     required: true,
+//     // validator: (arr) => arr.length === 8,
+//   },
+//   infoText: {
+//     type: String,
+//     // default: "نحن نبحث عن موظفين!",
+//   },
+//   description: {
+//     type: String,
+//     // default:
+//     //   "لدينا فريقنا يتطور بسرعة ونحن نبحث دائمًا عن أشخاص مهاريين ومحترفين.",
+//   },
+//   buttonText: {
+//     type: String,
+//     // default: "عرض الوظائف المتاحة",
+//   },
+// });
 </script>
 
 <style scoped>

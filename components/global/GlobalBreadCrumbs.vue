@@ -53,7 +53,7 @@ defineProps({
 
 <style lang="scss" scoped>
 .bgImage {
-  background-image: url("assets/icons/backg.svg");
+  background-image: url("assets/icons/backg.webp");
 }
 
 .breadcrumb-list {

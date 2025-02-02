@@ -50,28 +50,30 @@ const {
   <GlobalBreadCrumbs :items="breadItems" :title="t('NAV.about_us')" />
 
   <section class="space-y-16">
-    <ValuesCard
+    <ValuesCard :values="values" />
+    <!-- <ValuesCard
       :imgSrc="image2"
       :title="t('ABOUT.who_we_are')"
       :paragraph1="t('ABOUT.paragraph1')"
       :paragraph2="t('ABOUT.paragraph2')"
       :paragraph3="t('ABOUT.paragraph3')"
-    />
+    /> -->
     <AboutNumbers :stats="statsData" />
     <AboutGoals :goals="goalsData" :vision="visionData" :values="valuesData" />
-    <ProjectsProp
+    <!-- <ProjectsProp
       :title="t('ABOUT.title')"
       :subtitle="t('ABOUT.content')"
       :features="features"
       :active="true"
-    />
-
-    <AboutTeam
+    /> -->
+    <ProjectsProp :projects="projects" />
+    <AboutTeam :team="team" />
+    <!-- <AboutTeam
       :profiles="profiles"
       :infoText="t('ABOUT.infoText')"
       :description="t('ABOUT.description')"
       :buttonText="t('ABOUT.buttonText')"
-    />
+    /> -->
     <HomeClients :slides="clientSlides" :stats="statsData" />
   </section>
 </template>
@@ -101,6 +103,7 @@ import image21 from "assets/icons/12.png";
 import image22 from "assets/icons/13.png";
 import image23 from "assets/icons/14.png";
 import image24 from "assets/icons/15.png";
+import { title } from "process";
 const { t } = useI18n();
 
 const breadItems = [
@@ -115,48 +118,139 @@ const breadItems = [
     imgIcon: "",
   },
 ];
-const profiles = [
-  {
-    image: image1,
-    name: t("TEAM.name"),
-    title: t("TEAM.title"),
-  },
-  {
-    image: image1,
-    name: t("TEAM.name"),
-    title: t("TEAM.title"),
-  },
-  {
-    image: image1,
-    name: t("TEAM.name"),
-    title: t("TEAM.title"),
-  },
-  {
-    image: image1,
-    name: t("TEAM.name"),
-    title: t("TEAM.title"),
-  },
-  {
-    image: image1,
-    name: t("TEAM.name"),
-    title: t("TEAM.title"),
-  },
-  {
-    image: image1,
-    name: t("TEAM.name"),
-    title: t("TEAM.title"),
-  },
-  {
-    image: image1,
-    name: t("TEAM.name"),
-    title: t("TEAM.title"),
-  },
-  {
-    image: image1,
-    name: t("TEAM.name"),
-    title: t("TEAM.title"),
-  },
-];
+const values = {
+  imgSrc: image2,
+  title: t("ABOUT.who_we_are"),
+  paragraph1: t("ABOUT.paragraph1"),
+  paragraph2: t("ABOUT.paragraph2"),
+  paragraph3: t("ABOUT.paragraph3"),
+};
+const projects = {
+  title: t("ABOUT.title"),
+  subtitle: t("ABOUT.content"),
+  features : [
+    {
+      text: t("ABOUT.features1[0].title"),
+      extraText: t("ABOUT.features1[0].description"),
+      icon: IconsKey,
+    },
+    {
+      text: t("ABOUT.features1[1].title"),
+      extraText: t("ABOUT.features1[1].description"),
+      icon: IconsLike,
+    },
+    {
+      text: t("ABOUT.features1[2].title"),
+      extraText: t("ABOUT.features1[2].description"),
+      icon: IconsCommerical,
+    },
+    {
+      text: t("ABOUT.features1[3].title"),
+      extraText: t("ABOUT.features1[3].description"),
+      icon: IconsTreasure,
+    },
+    {
+      text: t("ABOUT.features1[4].title"),
+      extraText: t("ABOUT.features1[4].description"),
+      icon: IconsDiscount,
+    },
+    {
+      text: t("ABOUT.features1[5].title"),
+      extraText: t("ABOUT.features1[5].description"),
+      icon: IconsVoucher,
+    },
+  ],
+  active:true
+};
+const team = {
+  profiles: [
+    {
+      image: image1,
+      name: t("TEAM.name"),
+      title: t("TEAM.title"),
+    },
+    {
+      image: image1,
+      name: t("TEAM.name"),
+      title: t("TEAM.title"),
+    },
+    {
+      image: image1,
+      name: t("TEAM.name"),
+      title: t("TEAM.title"),
+    },
+    {
+      image: image1,
+      name: t("TEAM.name"),
+      title: t("TEAM.title"),
+    },
+    {
+      image: image1,
+      name: t("TEAM.name"),
+      title: t("TEAM.title"),
+    },
+    {
+      image: image1,
+      name: t("TEAM.name"),
+      title: t("TEAM.title"),
+    },
+    {
+      image: image1,
+      name: t("TEAM.name"),
+      title: t("TEAM.title"),
+    },
+    {
+      image: image1,
+      name: t("TEAM.name"),
+      title: t("TEAM.title"),
+    },
+  ],
+  infoText: t("ABOUT.infoText"),
+  description: t("ABOUT.description"),
+  buttonText: t("ABOUT.buttonText"),
+}
+// const profiles = [
+//   {
+//     image: image1,
+//     name: t("TEAM.name"),
+//     title: t("TEAM.title"),
+//   },
+//   {
+//     image: image1,
+//     name: t("TEAM.name"),
+//     title: t("TEAM.title"),
+//   },
+//   {
+//     image: image1,
+//     name: t("TEAM.name"),
+//     title: t("TEAM.title"),
+//   },
+//   {
+//     image: image1,
+//     name: t("TEAM.name"),
+//     title: t("TEAM.title"),
+//   },
+//   {
+//     image: image1,
+//     name: t("TEAM.name"),
+//     title: t("TEAM.title"),
+//   },
+//   {
+//     image: image1,
+//     name: t("TEAM.name"),
+//     title: t("TEAM.title"),
+//   },
+//   {
+//     image: image1,
+//     name: t("TEAM.name"),
+//     title: t("TEAM.title"),
+//   },
+//   {
+//     image: image1,
+//     name: t("TEAM.name"),
+//     title: t("TEAM.title"),
+//   },
+// ];
 const clientSlides = [
   { background: image16 },
   { background: image17 },
@@ -169,38 +263,38 @@ const clientSlides = [
   { background: image24 },
 ];
 
-const features = ref([
-  {
-    text: t("ABOUT.features1[0].title"),
-    extraText: t("ABOUT.features1[0].description"),
-    icon: IconsKey,
-  },
-  {
-    text: t("ABOUT.features1[1].title"),
-    extraText: t("ABOUT.features1[1].description"),
-    icon: IconsLike,
-  },
-  {
-    text: t("ABOUT.features1[2].title"),
-    extraText: t("ABOUT.features1[2].description"),
-    icon: IconsCommerical,
-  },
-  {
-    text: t("ABOUT.features1[3].title"),
-    extraText: t("ABOUT.features1[3].description"),
-    icon: IconsTreasure,
-  },
-  {
-    text: t("ABOUT.features1[4].title"),
-    extraText: t("ABOUT.features1[4].description"),
-    icon: IconsDiscount,
-  },
-  {
-    text: t("ABOUT.features1[5].title"),
-    extraText: t("ABOUT.features1[5].description"),
-    icon: IconsVoucher,
-  },
-]);
+// const features = ref([
+//   {
+//     text: t("ABOUT.features1[0].title"),
+//     extraText: t("ABOUT.features1[0].description"),
+//     icon: IconsKey,
+//   },
+//   {
+//     text: t("ABOUT.features1[1].title"),
+//     extraText: t("ABOUT.features1[1].description"),
+//     icon: IconsLike,
+//   },
+//   {
+//     text: t("ABOUT.features1[2].title"),
+//     extraText: t("ABOUT.features1[2].description"),
+//     icon: IconsCommerical,
+//   },
+//   {
+//     text: t("ABOUT.features1[3].title"),
+//     extraText: t("ABOUT.features1[3].description"),
+//     icon: IconsTreasure,
+//   },
+//   {
+//     text: t("ABOUT.features1[4].title"),
+//     extraText: t("ABOUT.features1[4].description"),
+//     icon: IconsDiscount,
+//   },
+//   {
+//     text: t("ABOUT.features1[5].title"),
+//     extraText: t("ABOUT.features1[5].description"),
+//     icon: IconsVoucher,
+//   },
+// ]);
 const statsData = [
   { number: "+6", label: t("years_of_experience") },
   { number: "470", label: t("employees_and_workers") },

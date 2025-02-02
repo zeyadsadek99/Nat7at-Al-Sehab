@@ -14,6 +14,28 @@ const breadItems = [
     imgIcon: "",
   },
 ];
+const servicesData = {
+  imageSrc: image1,
+  imageAlt: "Project Development",
+  title: t("SERVICES1.propertyDevelopment"),
+  description: t("SERVICES1.propertyDevelopmentDescription"),
+  listItems: [
+    {
+      title: t("SERVICES.flexibility"),
+      subItems: [t("SERVICES1.flexibilityDescription.0"), t("SERVICES1.flexibilityDescription.1")],
+    },
+    {
+      title: t("SERVICES1.financialStability"),
+      subItems: [
+        t("SERVICES1.financialStabilityDescription.0"),
+        t("SERVICES1.financialStabilityDescription.1"),
+        t("SERVICES1.financialStabilityDescription.2"),
+        t("SERVICES1.financialStabilityDescription.3"),
+        t("SERVICES1.financialStabilityDescription.4"),
+      ],
+    },
+  ],
+};
 const {
   data,
   status,
@@ -36,7 +58,9 @@ const {
     <GlobalBreadCrumbs :items="breadItems" :title="t('NAV.services')" />
 
     <!-- <ServicesInvestment/> -->
-    <ServicesCard
+    <ServicesCard :services="servicesData"/>
+
+    <!-- <ServicesCard
       :imageSrc="image1"
       imageAlt="Project Development"
       :title="t('SERVICES1.propertyDevelopment')"
@@ -57,7 +81,7 @@ const {
           ],
         },
       ]"
-    />
+    /> -->
   </div>
 </template>
 

@@ -115,8 +115,8 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      // baseURL: "https://backend.streamco-sa.com/api/website",
-      // general: "https://backend.streamco-sa.com/api",
+      baseURL: "https://backend.streamco-sa.com/api/website",
+      general: "https://backend.streamco-sa.com/api",
       // baseURL: "https://backend.ngtsa.com/api/website",
       // general: "https://backend.ngtsa.com/api",
     },

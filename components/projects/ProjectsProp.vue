@@ -7,7 +7,7 @@
         data-aos="fade-up"
         data-aos-duration="800"
       >
-        <h1 class="lg:text-[24px] font-bold text-[#0F2239]">{{ title }}</h1>
+        <h1 class="lg:text-[24px] font-bold text-[#0F2239]">{{ projects.title }}</h1>
         <div
           class="flex gap-4 items-center justify-center"
           data-aos="zoom-in"
@@ -22,7 +22,7 @@
           data-aos="fade-up"
           data-aos-delay="300"
         >
-          {{ subtitle }}
+          {{ projects.subtitle }}
         </p>
       </div>
 
@@ -33,7 +33,7 @@
         data-aos-duration="1000"
       >
         <div
-          v-for="(feature, index) in features"
+          v-for="(feature, index) in projects.features"
           :key="index"
           class="group flex items-center bg-white gap-4 p-3 border rounded-lg shadow-md transition-all duration-300 hover:border-primary"
           data-aos="zoom-in"
@@ -87,26 +87,33 @@ import IconsTreasure from "@/components/icons/treasure.vue";
 import IconsDiscount from "@/components/icons/discount.vue";
 import IconsVoucher from "@/components/icons/voucher.vue";
 
-const props = defineProps({
-  title: {
-    type: String,
+const props =defineProps({
+  projects: {
+    type: Object,
     required: true,
   },
-  subtitle: {
-    type: String,
-    required: false,
-  },
-
-  features: {
-    type: Array as () => any[], // Explicitly declare the array type to hold any type
-    required: false,
-  },
-  active: {
-    type: Boolean,
-    required: false,
-    default: false,
-  },
 });
+
+// const props = defineProps({
+//   title: {
+//     type: String,
+//     required: true,
+//   },
+//   subtitle: {
+//     type: String,
+//     required: false,
+//   },
+
+//   features: {
+//     type: Array as () => any[], // Explicitly declare the array type to hold any type
+//     required: false,
+//   },
+//   active: {
+//     type: Boolean,
+//     required: false,
+//     default: false,
+//   },
+// });
 
 //  default
 const defaultFeatures = [
@@ -118,7 +125,7 @@ const defaultFeatures = [
   { text: "Aluminum Windows with Glass", icon: IconsVoucher },
 ];
 
-const features = ref(props.features?.length ? props.features : defaultFeatures);
+const features = ref(props.projects.features?.length ? props.projects.features : defaultFeatures);
 </script>
 
 <style scoped>

@@ -7,8 +7,8 @@
     >
       <!-- Image -->
       <img
-        :src="imageSrc"
-        :alt="imageAlt"
+        :src="services.imageSrc"
+        :alt="services.imageAlt"
         class="w-full h-[400px] lg:h-[500px] object-cover rounded-xl mb-12"
         data-aos="zoom-in"
         data-aos-duration="800"
@@ -21,18 +21,18 @@
           data-aos="fade-down"
           data-aos-duration="800"
         >
-          {{ title }}
+          {{ services.title }}
         </h1>
 
         <!-- Description -->
         <p
-          v-if="description"
+          v-if="services.description"
           class="lg:leading-8 space-y-4"
           data-aos="fade-up"
           data-aos-delay="200"
           data-aos-duration="800"
         >
-          {{ description }}
+          {{ services.description }}
         </p>
 
         <!-- List -->
@@ -43,7 +43,7 @@
           data-aos-duration="1000"
         >
           <li
-            v-for="(item, index) in listItems"
+            v-for="(item, index) in services.listItems"
             :key="index"
             class="flex items-start"
             data-aos="fade-right"
@@ -89,36 +89,39 @@
   </section>
 </template>
 
-  
-  <script setup>
-  defineProps({
-    
-    imageSrc: {
-      type: String,
-      required: true,
-    },
-    imageAlt: {
-      type: String,
-      default: "Image description",
-    },
-    title: {
-      type: String,
-      required: true,
-    },
-    description: {
-      type: String,
-      default: "",
-    },
-    listItems: {
-      type: Array,
-      required: true,
-      default: () => [],
-    },
-  });
-  </script>
-  
-  <style scoped>
-  img {
-    object-fit: cover;
-  }
-  </style>
+<script setup>
+const props =defineProps({
+  services: {
+    type: Object,
+    required: true,
+  },
+});// const props = defineProps({
+//   imageSrc: {
+//     type: String,
+//     required: true,
+//   },
+//   imageAlt: {
+//     type: String,
+//     default: "Image description",
+//   },
+//   title: {
+//     type: String,
+//     required: true,
+//   },
+//   description: {
+//     type: String,
+//     default: "",
+//   },
+//   listItems: {
+//     type: Array,
+//     required: true,
+//     default: () => [],
+//   },
+// });
+</script>
+
+<style scoped>
+img {
+  object-fit: cover;
+}
+</style>

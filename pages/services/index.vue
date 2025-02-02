@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 const axios = useNuxtApp().$axios;
+import ServicesCard from "~/components/services/ServicesCard.vue";
 import image1 from "/assets/icons/right1.jpg";
 const { t, locale } = useI18n();
 const breadItems = [
@@ -14,6 +15,27 @@ const breadItems = [
     imgIcon: "",
   },
 ];
+const servicesData = 
+  {
+    imageSrc: image1,
+    imageAlt: "Project Development",
+    title: t("SERVICES.propertyDevelopment"),
+    description: t("SERVICES.propertyDevelopmentDescription"),
+    listItems: [
+      {
+        title: t("SERVICES.flexibility"),
+        subItems: [t("SERVICES.flexibilityDescription")],
+      },
+      {
+        title: t("SERVICES.financialStability"),
+        subItems: [
+          t("SERVICES.financialStabilityDescription.0"),
+          t("SERVICES.financialStabilityDescription.1"),
+        ],
+      },
+    ],
+  };
+
 // const { data, status, refresh } = await useLazyAsyncData("home", () =>
 //   axios
 //     .get(`home`, {
@@ -29,7 +51,7 @@ const breadItems = [
 <template>
   <div class="space-y-16 ">
     <GlobalBreadCrumbs :items="breadItems" :title="t('NAV.services')" />
-    <ServicesCard
+    <!-- <ServicesCard
       :imageSrc="image1"
       imageAlt="Project Development"
       :title="t('SERVICES.propertyDevelopment')"
@@ -47,7 +69,8 @@ const breadItems = [
           ],
         },
       ]"
-    />
+    /> -->
+    <ServicesCard :services="servicesData"/>
   </div>
 </template>
 

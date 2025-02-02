@@ -20,14 +20,14 @@
             v-if="!isSwitched"
             class="text-[20px] lg:text-[30px] font-medium text-center mb-4"
           >
-            {{ title }}
+            {{ numbers.title }}
           </h1>
           <p class="text-sm lg:text-[19px] leading-8 font-medium">
             {{ currentDescription }}
           </p>
         </div>
         <NuxtLink
-          :to="localePath(link)"
+          :to="localePath(numbers.link)"
           class="group mt-2 px-6 py-1 max-w-[137px] bg-white text-primary rounded-lg flex items-center gap-2"
           data-aos="zoom-in"
           data-aos-duration="1000"
@@ -56,7 +56,7 @@
       >
         <img
           :src="currentImageSrc"
-          :alt="imageAlt"
+          :alt="numbers.imageAlt"
           class="size-full object-cover cursor-pointer"
         />
       </div>
@@ -71,7 +71,7 @@
     >
       <div class="grid grid-cols-2 md:grid-cols-4 gap-[70px] text-center">
         <div
-          v-for="(item, index) in stats"
+          v-for="(item, index) in numbers.stats"
           :key="index"
           class="flex flex-col gap-1 items-center"
           data-aos="fade-up"
@@ -96,50 +96,55 @@ import { useI18n } from "vue-i18n";
 const { locale, t } = useI18n();
 const localePath = useLocalePath();
 
-const props = defineProps({
-  title: {
-    type: String,
-    required: true,
-  },
-  description: {
-    type: String,
-    required: true,
-  },
-  imageSrc: {
-    type: String,
-    required: true,
-  },
-  imageAlt: {
-    type: String,
-    default: "Section Image",
-  },
-  stats: {
-    type: Array as () => any[], // Explicitly declare the array type to hold any type
-    required: true,
-  },
-  alternateDescription: {
-    type: String,
-    required: true,
-  },
-  alternateImageSrc: {
-    type: String,
-    required: true,
-  },
-  link: {
-    type: String,
+// const props = defineProps({
+//   title: {
+//     type: String,
+//     required: true,
+//   },
+//   description: {
+//     type: String,
+//     required: true,
+//   },
+//   imageSrc: {
+//     type: String,
+//     required: true,
+//   },
+//   imageAlt: {
+//     type: String,
+//     default: "Section Image",
+//   },
+//   stats: {
+//     type: Array as () => any[], // Explicitly declare the array type to hold any type
+//     required: true,
+//   },
+//   alternateDescription: {
+//     type: String,
+//     required: true,
+//   },
+//   alternateImageSrc: {
+//     type: String,
+//     required: true,
+//   },
+//   link: {
+//     type: String,
+//     required: true,
+//   },
+// });
+const props =defineProps({
+  numbers: {
+    type: Object,
     required: true,
   },
 });
-
 // Reactive state for switching content
 const isSwitched = ref(false);
 
 // Compute current content based on state
 const currentDescription = computed(() =>
-  isSwitched.value ? props.alternateDescription : props.description
+  isSwitched.value ? props.numbers.alternateDescription : props.numbers.description
 );
 const currentImageSrc = computed(() =>
-  isSwitched.value ? props.alternateImageSrc : props.imageSrc
+  isSwitched.value ? props.numbers.alternateImageSrc : props.numbers.imageSrc
 );
 
 // Switch content on image click

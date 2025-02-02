@@ -39,32 +39,28 @@ const projects = [
     image: image3,
     title: t("items.emerald_valley"),
     description: t("items.real_estate_development"),
-    link:'/projects/1'
-
+    link: "/projects/1",
   },
   {
     isCompleted: true,
     image: image4,
     title: t("items.maroog_lake"),
     description: t("items.real_estate_investment"),
-    link:'/projects/2'
-
+    link: "/projects/2",
   },
   {
     isCompleted: false,
     image: image1,
     title: t("items.elite_palace"),
     description: t("items.real_estate_investment"),
-    link:'/projects/3'
-
+    link: "/projects/3",
   },
   {
     isCompleted: true,
     image: image2,
     title: t("items.royal_heights"),
     description: t("items.real_estate_development"),
-    link:'/projects/4'
-
+    link: "/projects/4",
   },
 ];
 const slidesData = [
@@ -216,6 +212,22 @@ const contactItems = {
     },
   ],
 };
+const homeNumbersData = {
+  title: t("project_development1"),
+  link: "/services",
+  stats: [
+    { number: "+6", label: t("years_of_experience") },
+    { number: "470", label: t("employees_and_workers") },
+    { number: "23", label: t("projects_completed") },
+    { number: "36", label: t("projects_in_progress") },
+  ],
+  description: t('real_estate_description'),
+  alternateDescription: t('alternate_real_estate_description'),
+  imageSrc: image7,
+  alternateImageSrc: image8,
+  // An array of content objects for switching between content
+  
+};
 
 const clientSlides = [
   { background: image16 },
@@ -229,21 +241,21 @@ const clientSlides = [
   { background: image24 },
 ];
 
-// const {
-//   data,
-//   status,
+const {
+  data,
+  status,
 
-//   refresh,
-// } = await useLazyAsyncData("home", () =>
-//   axios
-//     .get(`home`, {
-//       headers: {
-//         "Accept-Language": locale.value,
-//       },
-//     })
-//     .then((res) => res.data)
-//     .catch((err) => err.response)
-// );
+  refresh,
+} = await useLazyAsyncData("home", () =>
+  axios
+    .get(`home`, {
+      headers: {
+        "Accept-Language": locale.value,
+      },
+    })
+    .then((res) => res.data)
+    .catch((err) => err.response)
+);
 </script>
 <template>
   <!-- <Loader1 v-if="status === 'pending'" />
@@ -261,7 +273,8 @@ const clientSlides = [
       <HomeServices :services="servicesData" />
     </div>
     <HomeFeatures :items="features" />
-    <HomeNumbers
+    <HomeNumbers :numbers="homeNumbersData" />
+    <!-- <HomeNumbers
       :title="t('project_development1')"
       :description="t('real_estate_description')"
       :alternateDescription="t('alternate_real_estate_description')"
@@ -269,8 +282,7 @@ const clientSlides = [
       :alternateImageSrc="image8"
       :stats="statsData"
       :link="'/services'"
-
-    />
+    /> -->
     <div>
       <GlobalTitle
         class="pt-16"
