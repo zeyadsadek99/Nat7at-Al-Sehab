@@ -84,12 +84,12 @@ const servicesData = [
   {
     image: image7,
     title: t("project_development1"),
-    link: "/services",
+    link: "/services?tab=0",
   },
   {
     image: image8,
     title: t("real_estate_investment"),
-    link: "/services/investment",
+    link: "/services?tab=1",
   },
 ];
 const features = [
@@ -215,12 +215,14 @@ const contactItems = {
 const homeNumbersData = {
   title: t("project_development1"),
   link: "/services",
+  // altLink: "/services?tab=1",
   stats: [
     { number: "+6", label: t("years_of_experience") },
     { number: "470", label: t("employees_and_workers") },
     { number: "23", label: t("projects_completed") },
     { number: "36", label: t("projects_in_progress") },
   ],
+
   description: t('real_estate_description'),
   alternateDescription: t('alternate_real_estate_description'),
   imageSrc: image7,

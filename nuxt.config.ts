@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
+
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: false },
@@ -19,10 +21,7 @@ export default defineNuxtConfig({
           content: `index,follow`,
         },
       ],
-      link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/logo.svg' },
-
-      ],
+      link: [{ rel: "icon", type: "image/x-icon", href: "/logo.svg" }],
       style: [],
 
       noscript: [],
@@ -87,6 +86,8 @@ export default defineNuxtConfig({
         vueI18nLoader: true,
       },
     ],
+
+
     "nuxt-swiper",
     "vue3-carousel-nuxt",
     "@nuxt/image",
@@ -138,9 +139,15 @@ export default defineNuxtConfig({
         },
       },
     },
+    
   },
   build: {
-    transpile: ["vue-toastification", "nuxt-aos", "swiper", "@vee-validate"],
+    transpile: [
+      "vue-toastification",
+      "nuxt-aos",
+      "swiper",
+      "@vee-validate",
+    ],
   },
   aos: {
     // Global settings:

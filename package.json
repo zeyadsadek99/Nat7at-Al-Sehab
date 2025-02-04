@@ -27,6 +27,7 @@
     "pinia": "^2.3.0",
     "swiper": "^11.1.15",
     "tailwind-merge": "^2.6.0",
+    "vite-plugin-vuetify": "^2.1.0",
     "vue": "latest",
     "vue-axios": "^3.5.2",
     "vue-router": "latest",

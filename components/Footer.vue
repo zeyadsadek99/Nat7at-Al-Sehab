@@ -72,7 +72,8 @@
         class="w-full flex flex-col md:flex-row justify-between items-center mt-8 text-center md:text-start"
       >
         <p class="text-primary mb-4 md:mb-0">
-          {{ t("NAV.all_rights_reserved") }} © {{ t("NAV.company_name") }} 2025
+          {{ t("NAV.all_rights_reserved") }} © {{ t("NAV.company_name") }} {{ new Date().getFullYear() }}
+
         </p>
         <div class="flex gap-4 text-primary justify-center md:justify-start">
           <nuxt-link to="/terms" class="text-sm">{{
