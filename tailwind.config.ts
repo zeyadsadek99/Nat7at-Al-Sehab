@@ -1,19 +1,17 @@
-/** @type {import('tailwindcss').Config} */
+import type { Config } from 'tailwindcss'
 
 const colors = require('tailwindcss/colors')
-module.exports = {
-
+export default {
   content: [
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
-    "./nuxt.config.{js,ts}",
     "./app.vue",
+    "./nuxt.config.{js,ts}",
     // './node_modules/@my-company/tailwind-components/**/*.js',
   ],
   theme: {
-
     colors: {
       border: "#7C8089",
       primary: 'var(--color-primary)',
@@ -30,27 +28,19 @@ module.exports = {
       black: colors.black,
       gray: colors.gray,
       red: colors.red
-
-
     },
     screens: {
       'xs': '425px',
-
       'sm': '576px',
       // => @media (min-width: 640px) { ... }
-
       'md': '768px',
       // => @media (min-width: 768px) { ... }
-
       'lg': '992px',
       // => @media (min-width: 992px) { ... }
-
       'xl': '1200px',
       // => @media (min-width: 1280px) { ... }
-
       '2xl': '1400px',
       // '3xl': '1600px',
-
     },
     minHeight: {
       '3/4': '75%',
@@ -76,7 +66,6 @@ module.exports = {
       // alumni: ['Alumni', 'sans-serif'],
     },
     opacity: {
- 
       "0": "0",
       "2": ".2",
       "25": ".25",
@@ -112,12 +101,10 @@ module.exports = {
       '15': '15px',
       '16': '16px',
     },
-
     extend: {
       boxShadow: {
         'custom-shadow': '0 4px 50px 0px rgba(0, 0, 0, 0.6)',
       },
-
       backgroundImage: {
         'custom-gradient': 'linear-gradient(180deg, #1E3A81 0%, #0E45D0 73.5%)',
         'custom-gradient1': 'linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%)',
@@ -142,7 +129,7 @@ module.exports = {
     },
   },
   plugins: [],
-};
+} satisfies Config
 
 
 

@@ -1,7 +1,9 @@
 <script lang="ts" setup>
 const axios = useNuxtApp().$axios;
+import { useI18n } from 'vue-i18n';
 const { t, locale } = useI18n();
 import image1 from "/assets/icons/left.svg";
+
 const breadItems = [
   {
     name: t("NAV.home"),

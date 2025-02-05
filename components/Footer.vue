@@ -38,7 +38,7 @@
 
         <!--  Links -->
         <div
-          class="w-full md:w-[40%] flex justify-center  gap-4 text-center md:text-start"
+          class="w-full md:w-[40%] flex justify-center gap-4 text-center md:text-start"
         >
           <div
             class="w-full sm:w-1/3"
@@ -72,8 +72,8 @@
         class="w-full flex flex-col md:flex-row justify-between items-center mt-8 text-center md:text-start"
       >
         <p class="text-primary mb-4 md:mb-0">
-          {{ t("NAV.all_rights_reserved") }} © {{ t("NAV.company_name") }} {{ new Date().getFullYear() }}
-
+          {{ t("NAV.all_rights_reserved") }} © {{ t("NAV.company_name") }}
+          {{ new Date().getFullYear() }}
         </p>
         <div class="flex gap-4 text-primary justify-center md:justify-start">
           <nuxt-link to="/terms" class="text-sm">{{
@@ -92,7 +92,7 @@
 import { useI18n } from "vue-i18n";
 const localePath = useLocalePath();
 
-const { t,locale } = useI18n();
+const { t, locale } = useI18n();
 
 const navColumns = [
   [

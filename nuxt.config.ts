@@ -30,6 +30,7 @@ export default defineNuxtConfig({
   },
 
   tailwindcss: {
+    
     cssPath: "~/assets/style/tailwind.scss",
   },
 
@@ -94,6 +95,7 @@ export default defineNuxtConfig({
   ],
 
   swiper: {},
+
   plugins: [
     {
       src: "~/plugins/vue-toastification.client.ts",
@@ -104,6 +106,7 @@ export default defineNuxtConfig({
       src: "~/plugins/vue-google-maps.client.ts",
       mode: "client",
     },
+    // "~/plugins/vuesax.ts",
   ],
 
   postcss: {

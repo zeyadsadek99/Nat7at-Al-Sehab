@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
 const axios = useNuxtApp().$axios;
 const { t, locale } = useI18n();
 import image1 from "assets/icons/s1.png";

@@ -6,7 +6,7 @@ import image3 from "assets/icons/s3.png";
 import image4 from "assets/icons/image3.jpg";
 import { useI18n } from "vue-i18n";
 
-const { t } = useI18n();
+const { t,locale } = useI18n();
 type Props = {
   settings: {
     logo: string;
@@ -14,8 +14,8 @@ type Props = {
 };
 defineProps<Props>();
 const axios = useNuxtApp().$axios;
-const localePath = useLocalePath();
-const switchLocalePath = useSwitchLocalePath();
+// const { localePath, switchLocalePath } = useNuxtI18n();
+
 const sidebar = ref<boolean>(false);
 const breadItems = [
   {
